@@ -1,16 +1,18 @@
 #include <iostream>
-#include <string>
 using namespace std;
 int main ()
 {
     int x;
     cin >> x;
     int i;
-    int product =1;
+    int j;
     for (i=1; i<=x; i++)
     {
-        product = product * i;
+        for (j=x; j<=i+4; j--)
+        {
+            cout << j << " ";
+        }
+        cout << "" << endl;
     }
-    cout << product  << endl;
     return 0;
 }
