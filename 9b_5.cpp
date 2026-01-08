@@ -1,18 +1,19 @@
 #include <iostream>
+#include <string>
 using namespace std;
 int main ()
 {
     int x;
     cin >> x;
     int i;
-    int j;
+    int count = 0;
     for (i=1; i<=x; i++)
     {
-        for (j=x; j>=i-4; j--)
-        {
-            cout << j;
-        }
-        cout << "" << endl;
+       if (i%2==0 && i%3==0)
+       {
+        count = count +1;
+       }
     }
+    cout << count  << endl;
     return 0;
 }

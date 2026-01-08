@@ -8,7 +8,7 @@ int main ()
     int j;
     for (i=1; i<=x; i++)
     {
-        for (j=x; j>=i-4; j--)
+        for (j=x; j>=x-i+1; j--)
         {
             cout << j;
         }

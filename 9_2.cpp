@@ -1,19 +1,16 @@
 #include <iostream>
-#include <string>
+#include <cmath>
 using namespace std;
 int main ()
 {
-    int x =10;
+    int x, y;
+    cin >> x >> y;
     int i;
     int sum =0;
     for (i=1; i<=x; i++)
     {
-        int x1;
-        cin >> x1;
-        sum = sum +x1;
+        sum = sum + pow(i,y);
     }
     cout << sum  << endl;
-    cout << sum/x  << endl;
-
     return 0;
 }
